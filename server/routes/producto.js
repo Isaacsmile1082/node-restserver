@@ -90,7 +90,7 @@ Agregar un producto
 */
 
 
-app.post('/producto', [verificaToken, verificarAdminRole] , (req, res) => {
+app.post('/producto', verificaToken , (req, res) => {
 
   let body = req.body;
 
